@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<DataCapture name="DC-ModelType" continueOnError="false" enabled="false">
+  <DisplayName>DC-ModelType</DisplayName>
+  <IgnoreUnresolvedVariables>false</IgnoreUnresolvedVariables>
+  <Capture>
+    <Collect ref="urirequest.model" default="0"/>
+    <DataCollector>dc_model_type</DataCollector>
+  </Capture>
+</DataCapture>

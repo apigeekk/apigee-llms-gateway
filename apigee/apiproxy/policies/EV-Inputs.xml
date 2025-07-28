@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ExtractVariables continueOnError="false" enabled="true" name="EV-Inputs">
+  <DisplayName>EV-Extract-Inputs</DisplayName>
+  <Properties/>
+  <URIPath name="name"/>
+  <QueryParam name="name"/>
+  <Header name="name"/>
+  <FormParam name="name"/>
+  <Variable name="name"/>
+  <IgnoreUnresolvedVariables>false</IgnoreUnresolvedVariables>
+  <JSONPayload>
+    <Variable name="prompt">
+      <JSONPath>$.prompt</JSONPath>
+    </Variable>
+    <Variable name="model">
+      <JSONPath>$.model</JSONPath>
+    </Variable>
+  </JSONPayload>
+  <Source clearPayload="false">request</Source>
+  <VariablePrefix>urirequest</VariablePrefix>
+</ExtractVariables>

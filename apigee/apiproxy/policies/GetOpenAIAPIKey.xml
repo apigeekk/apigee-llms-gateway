@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<KeyValueMapOperations name="GetOpenAIAPIKey" mapIdentifier="hib-kvm">
+  <DisplayName>KVM-GetOpenAIAPIKey</DisplayName>
+  <Scope>environment</Scope>
+  <Get assignTo="private.openai_apikey" index="1">
+    <Key>
+      <Parameter>openai_api_key</Parameter>
+    </Key>
+  </Get>
+</KeyValueMapOperations>

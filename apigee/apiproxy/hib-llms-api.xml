@@ -1,0 +1,37 @@
+<APIProxy revision="70" name="hib-llms-api">
+    <DisplayName></DisplayName>
+    <Description></Description>
+    <CreatedAt>1730194170703</CreatedAt>
+    <LastModifiedAt>1730194170703</LastModifiedAt>
+    <BasePaths>/v1/llms-api</BasePaths>
+    <Policies>
+        <Policy>EV-Inputs</Policy>
+        <Policy>RF-NotFound</Policy>
+        <Policy>RF-MissingInputs</Policy>
+        <Policy>Assign-Message-Gemini</Policy>
+        <Policy>Assign-Message-OpenAI</Policy>
+        <Policy>VA-VerifyApiKey</Policy>
+        <Policy>AM-Gemini</Policy>
+        <Policy>AM-Open</Policy>
+        <Policy>AM-Anthropic</Policy>
+        <Policy>Assign-Message-Anthropic</Policy>
+        <Policy>DynamicQuota</Policy>
+        <Policy>SA-SpikeArrest</Policy>
+        <Policy>DC-TokensCount</Policy>
+        <Policy>DC-ModelType</Policy>
+        <Policy>RF-TooManyRequests</Policy>
+        <Policy>RF-QuotaExceeded</Policy>
+        <Policy>GetGeminiAPIKey</Policy>
+        <Policy>GetOpenAIAPIKey</Policy>
+        <Policy>GetAnthropicAPIKey</Policy>
+        <Policy>EV-TokenCounts</Policy>
+        <Policy>SC-SanitizePrompt</Policy>
+        <Policy>FC-SanitizePrompt</Policy>
+    </Policies>
+    <ProxyEndpoints>
+        <ProxyEndpoint>default</ProxyEndpoint>
+    </ProxyEndpoints>
+    <TargetEndpoints>
+        <TargetEndpoint>default</TargetEndpoint>
+    </TargetEndpoints>
+</APIProxy>

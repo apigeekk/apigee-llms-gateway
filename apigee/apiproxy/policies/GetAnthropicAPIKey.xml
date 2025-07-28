@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<KeyValueMapOperations name="GetAnthropicAPIKey" mapIdentifier="hib-kvm">
+  <DisplayName>KVM-GetAnthropicAPIKey</DisplayName>
+  <Scope>environment</Scope>
+  <Get assignTo="private.anthropic_apikey" index="1">
+    <Key>
+      <Parameter>anthropic_api_key</Parameter>
+    </Key>
+  </Get>
+</KeyValueMapOperations>
