@@ -1,15 +1,16 @@
-<SharedFlowBundle revision="2" name="PromptSanitization">
-    <DisplayName></DisplayName>
-    <Description></Description>
-    <CreatedAt>1730192976305</CreatedAt>
-    <LastModifiedAt>1730193505854</LastModifiedAt>
-    <Policies>
-        <Policy>SC-SanitizePrompt</Policy>
-        <Policy>EV-ExtractModelArmorResponse</Policy>
-        <Policy>Raise-Fault-1</Policy>
-    </Policies>
-    <SharedFlows>
-        <SharedFlow>default</SharedFlow>
-    </SharedFlows>
-    <subType>SharedFlow</subType>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<SharedFlowBundle revision="3" name="PromptSanitization">
+  <DisplayName/>
+  <Description/>
+  <CreatedAt>1753777495135</CreatedAt>
+  <LastModifiedAt>1753777495135</LastModifiedAt>
+  <Policies>
+    <Policy>SC-SanitizePrompt</Policy>
+    <Policy>EV-ExtractModelArmorResponse</Policy>
+    <Policy>Raise-Fault-1</Policy>
+  </Policies>
+  <SharedFlows>
+    <SharedFlow>default</SharedFlow>
+  </SharedFlows>
+  <subType>SharedFlow</subType>
 </SharedFlowBundle>

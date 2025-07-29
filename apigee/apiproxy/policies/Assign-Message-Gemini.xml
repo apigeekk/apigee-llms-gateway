@@ -9,9 +9,9 @@
   </Add>
   <AssignVariable>
     <Name>target.url</Name>
-    <Value>[CLOUD_RUN_SERVICE_URL]/gemini</Value>
+    <Value>https://llms-int-service-14188143970.us-central1.run.app/gemini</Value>
     <Ref/>
   </AssignVariable>
-<IgnoreUnresolvedVariables>true</IgnoreUnresolvedVariables>
-<AssignTo createNew="false" transport="http" type="request"/>
+  <IgnoreUnresolvedVariables>true</IgnoreUnresolvedVariables>
+  <AssignTo createNew="false" transport="http" type="request"/>
 </AssignMessage>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<APIProxy revision="8" name="apigee-llms-gw-api">
+  <DisplayName/>
+  <Description/>
+  <CreatedAt>1753777646276</CreatedAt>
+  <LastModifiedAt>1753777708054</LastModifiedAt>
+  <BasePaths>/v1/llms-gw-api</BasePaths>
+  <Policies>
+    <Policy>RF-NotFound</Policy>
+    <Policy>VA-VerifyApiKey</Policy>
+    <Policy>AM-Anthropic</Policy>
+    <Policy>AM-Open</Policy>
+    <Policy>GetOpenAIAPIKey</Policy>
+    <Policy>DC-ModelType</Policy>
+    <Policy>DynamicQuota</Policy>
+    <Policy>GetGeminiAPIKey</Policy>
+    <Policy>EV-Inputs</Policy>
+    <Policy>EV-TokenCounts</Policy>
+    <Policy>SA-SpikeArrest</Policy>
+    <Policy>RF-TooManyRequests</Policy>
+    <Policy>RF-QuotaExceeded</Policy>
+    <Policy>Assign-Message-OpenAI</Policy>
+    <Policy>SC-SanitizePrompt</Policy>
+    <Policy>DC-TokensCount</Policy>
+    <Policy>GetAnthropicAPIKey</Policy>
+    <Policy>FC-SanitizePrompt</Policy>
+    <Policy>RF-MissingInputs</Policy>
+    <Policy>AM-Gemini</Policy>
+    <Policy>Assign-Message-Anthropic</Policy>
+    <Policy>Assign-Message-Gemini</Policy>
+    <Policy>RemoveApiKey</Policy>
+  </Policies>
+  <ProxyEndpoints>
+    <ProxyEndpoint>default</ProxyEndpoint>
+  </ProxyEndpoints>
+  <TargetEndpoints>
+    <TargetEndpoint>default</TargetEndpoint>
+  </TargetEndpoints>
+</APIProxy>

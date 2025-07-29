@@ -1,30 +1,23 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <AssignMessage continueOnError="false" enabled="true" name="AM-Open">
-    <DisplayName>AM-OpenAI</DisplayName>
-    <Properties/>
-    <Add>
-        <Headers/>
-        <QueryParams/>
-        <FormParams/>
-    </Add>
-    <Set>
-        <Headers>
-            <Header name="api_key">{private.openai_apikey}</Header>
-
-            <Header name="X-Max-Output-Tokens">{verifyapikey.VA-VerifyApiKey.apiproduct.operation.attributes.max_output_tokens}</Header>
-
-            <Header name="X-Model-Armor-Template-Url">{verifyapikey.VA-VerifyApiKey.apiproduct.ModelArmorTemplatePath}</Header>
-        </Headers>
-        <QueryParams/>
-        <FormParams/>
-        <Path/>
-        <Payload contentType="application/json">
+  <DisplayName>AM-OpenAI</DisplayName>
+  <Properties/>
+  <Add>
+    <Headers>
+      <Header name="X-Api-Key">{private.openai_apikey}</Header>
+      <Header name="X-Max-Output-Tokens">{verifyapikey.VA-VerifyApiKey.apiproduct.operation.attributes.max_output_tokens}</Header>
+    </Headers>
+    <QueryParams/>
+    <FormParams/>
+  </Add>
+  <Set>
+    <Payload contentType="application/json">
             {
                 "model": "{urirequest.model}",
                 "prompt":"{urirequest.prompt}"
             }
         </Payload>
-    </Set>
-    <IgnoreUnresolvedVariables>true</IgnoreUnresolvedVariables>
-    <AssignTo createNew="false" transport="http" type="request"/>
+  </Set>
+  <IgnoreUnresolvedVariables>true</IgnoreUnresolvedVariables>
+  <AssignTo createNew="false" transport="http" type="request"/>
 </AssignMessage>

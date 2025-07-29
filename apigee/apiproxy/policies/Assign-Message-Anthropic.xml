@@ -4,9 +4,9 @@
   <Properties/>
   <AssignVariable>
     <Name>target.url</Name>
-    <Value>[CLOUD_RUN_SERVICE_URL]/anthropic</Value>
+    <Value>https://llms-int-service-14188143970.us-central1.run.app/anthropic</Value>
     <Ref/>
   </AssignVariable>
-<IgnoreUnresolvedVariables>false</IgnoreUnresolvedVariables>
-<AssignTo createNew="false" transport="http" type="request"/>
+  <IgnoreUnresolvedVariables>false</IgnoreUnresolvedVariables>
+  <AssignTo createNew="false" transport="http" type="request"/>
 </AssignMessage>
