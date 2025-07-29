@@ -4,7 +4,7 @@
   <Properties/>
   <AssignVariable>
     <Name>target.url</Name>
-    <Value>https://llms-int-service-14188143970.us-central1.run.app/anthropic</Value>
+    <Value><Replace_With_Cloud_Run_Service_URL>/anthropic</Value>
     <Ref/>
   </AssignVariable>
   <IgnoreUnresolvedVariables>false</IgnoreUnresolvedVariables>
