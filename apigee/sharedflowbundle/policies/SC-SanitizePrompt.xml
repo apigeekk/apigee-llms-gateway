@@ -25,6 +25,6 @@
       </GoogleIDToken>
     </Authentication>
     <Properties/>
-    <URL>https://llms-int-service-14188143970.us-central1.run.app/sanitizePrompt</URL>
+    <URL><Replace_With_Cloud_Run_Service_URL>/sanitizePrompt</URL>
   </HTTPTargetConnection>
 </ServiceCallout>

@@ -57,7 +57,7 @@ st.markdown("""
 st.markdown("<h1 style='text-align: center;'> LLMs Gateway Demo (powered by Apigee)</h1>", unsafe_allow_html=True)
 
 # LLM selection
-llm_options = ["gemini-1.5-flash", "gpt-4o-mini", "claude-3-5-sonnet-20240620"]
+llm_options = ["gemini-1.5-flash", "gpt-4o-mini", "claude-3-5-sonnet-20240620"] 
 selected_llm = st.selectbox("Select an LLM", llm_options, key="llm_select")
 
 # Application Settings
@@ -90,9 +90,6 @@ def call_api(prompt, model, api_key, api_endpoint, path_suffix):
         response.raise_for_status()  # This will raise an HTTPError if the status code is 4xx or 5xx
 
         result = response.json()
-        logging.info("----------LLM reply--------")
-        logging.info(result)
-        logging.info("----------------------------")
         return result
 
     except requests.exceptions.HTTPError as http_err:
@@ -101,11 +98,11 @@ def call_api(prompt, model, api_key, api_endpoint, path_suffix):
         except ValueError:
             error_message = f"API call failed >> {error_message}"  # Use a generic message if JSON decoding fails
         logging.error(f"HTTP error occurred: {http_err}, Message: {error_message}")
-        st.error(f"HTTP error occurred: {error_message}")  # Display the specific error message
+        st.error(f"HTTP error occurred: check the logs for details.")
         return None
     except requests.exceptions.RequestException as e:
         logging.error(f"API call failed: {e}")
-        st.error(f"An error occurred: {e}")
+        st.error(f"API call failed: check the logs for details.")
         return None
 
 

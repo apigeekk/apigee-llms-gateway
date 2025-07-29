@@ -1,51 +1,36 @@
 {
-    "filterConfig": {
-      "raiSettings": {
-        "raiFilters": [
-          {
-            "filterType": "PROFANITY",
-            "confidenceLevel": "MEDIUM_AND_ABOVE"
-          }, 
-          {
-            "filterType": "RELIGIOUS_BELIEF",
-            "confidenceLevel": "HIGH"
-          }, 
-          {
-            "filterType": "HEALTH",
-            "confidenceLevel": "MEDIUM_AND_ABOVE"
-          },
-          {
-            "filterType": "WAR_CONFLICT",
-            "confidenceLevel": "LOW_AND_ABOVE"
-          }, 
-          {
-            "filterType": "SEXUALLY_EXPLICIT",
-            "confidenceLevel": "MEDIUM_AND_ABOVE"
-          }, 
-          {
-            "filterType": "PUBLIC_SAFETY",
-            "confidenceLevel": "HIGH"
-          },
-          {
-            "filterType": "FINANCE",
-            "confidenceLevel": "MEDIUM_AND_ABOVE"
-          }
-        ]
-      },
-
-      "piAndJailbreakFilterSettings": {
-        "filterEnforcement": "ENABLED",
-        "confidenceLevel": "LOW_AND_ABOVE"
-      },
-      "maliciousUriFilterSettings": {
-        "filterEnforcement": "ENABLED"
-      },
-      "sdpSettings": {
-        "basicConfig": {
+  "filterConfig": {
+    "raiSettings": {
+      "raiFilters": [
+        {
+          "filterType": "HARASSMENT",
+          "confidenceLevel": "MEDIUM_AND_ABOVE"
+        }, 
+        {
+          "filterType": "HATE_SPEECH",
+          "confidenceLevel": "HIGH"
+        }, 
+        {
+          "filterType": "DANGEROUS",
+          "confidenceLevel": "MEDIUM_AND_ABOVE"
+        },
+        {
+          "filterType": "SEXUALLY_EXPLICIT",
+          "confidenceLevel": "MEDIUM_AND_ABOVE"
+        }
+      ]
+    },
+    "piAndJailbreakFilterSettings": {
+      "filterEnforcement": "ENABLED",
+      "confidenceLevel": "LOW_AND_ABOVE"
+    },
+    "maliciousUriFilterSettings": {
+      "filterEnforcement": "ENABLED"
+    },
+    "sdpSettings": {
+      "basicConfig": {
         "filterEnforcement": "ENABLED"
       }
-
-
-     }
     }
+  }
 }
