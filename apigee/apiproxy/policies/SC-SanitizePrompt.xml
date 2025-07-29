@@ -25,6 +25,6 @@
       </GoogleIDToken>
     </Authentication>
     <Properties/>
-    <URL><Replace_With_Cloud_Run_Service_URL>/sanitizePrompt</URL>
+    <URL>[Replace_With_Cloud_Run_Service_URL]/sanitizePrompt</URL>
   </HTTPTargetConnection>
 </ServiceCallout>

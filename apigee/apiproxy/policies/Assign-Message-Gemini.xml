@@ -2,14 +2,9 @@
 <AssignMessage continueOnError="false" enabled="true" name="Assign-Message-Gemini">
   <DisplayName>Assign Message-Gemini</DisplayName>
   <Properties/>
-  <Add>
-    <Headers/>
-    <QueryParams/>
-    <FormParams/>
-  </Add>
   <AssignVariable>
     <Name>target.url</Name>
-    <Value><Replace_With_Cloud_Run_Service_URL>/gemini</Value>
+    <Value>[Replace_With_Cloud_Run_Service_URL]/gemini</Value>
     <Ref/>
   </AssignVariable>
   <IgnoreUnresolvedVariables>true</IgnoreUnresolvedVariables>
