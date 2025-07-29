@@ -4,7 +4,7 @@
   <Properties/>
   <AssignVariable>
     <Name>target.url</Name>
-    <Value>[Replace_With_Cloud_Run_Service_URL]/gemini</Value>
+    <Value>[CLOUD_RUN_SERVICE_URL]/gemini</Value>
     <Ref/>
   </AssignVariable>
   <IgnoreUnresolvedVariables>true</IgnoreUnresolvedVariables>
